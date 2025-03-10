@@ -60,6 +60,8 @@ jobs:
         username: ${{ secrets.DOCKER_HUB_USERNAME }}
         password: ${{ secrets.DOCKER_HUB_TOKEN }}
         
+    - name: Debug Docker Username
+      run: echo "Docker Hub Username is '${{ secrets.DOCKER_HUB_USERNAME }}'"
 
 
   deploy:
