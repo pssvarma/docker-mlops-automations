@@ -68,7 +68,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: pssvarma8881/ml-project:latest
+        tags: ${{ secrets.DOCKER_HUB_USERNAME }}/ml-project:latest
 
   deploy:
     needs: build-and-push-docker
